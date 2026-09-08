@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js File Server</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section class="hero">
+            <div class="badge">
+                <span class="badge-dot"></span>
+                NODE.JS PROJECT
+            </div>
+
+            <h1>Welcome to the<br><span>Node.js File Server</span></h1>
+
+            <p class="intro">
+                A lightweight file server built with Node.js that
+                serves web files and handles file uploads.
+            </p>
+
+            <div class="server-status">
+                <span class="status-dot"></span>
+                <div>
+                    <strong>Server Online</strong>
+                    <small>localhost:3000</small>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="upload-card">
+
+            <div class="section-heading">
+                <div class="upload-icon">↑</div>
+
+                <div>
+                    <h2>Upload a File</h2>
+                    <p>Select a file to save it to the server.</p>
+                </div>
+            </div>
+
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+
+                <label class="file-area">
+                    <input
+                        type="file"
+                        name="file"
+                        id="fileInput"
+                        accept=".txt,.pdf,.jpg,.jpeg,.png"
+                        required
+                    >
+
+                    <span class="file-icon">＋</span>
+
+                    <strong id="fileName">
+                        Choose a file to upload
+                    </strong>
+
+                    <small>
+                        PDF, PNG, JPG, JPEG, or TXT
+                    </small>
+                </label>
+
+                <button type="submit">
+                    Upload File
+                    <span>→</span>
+                </button>
+
+            </form>
+
+            <p id="statusMsg"></p>
+
+        </section>
+
+
+        <footer>
+            <span>Built with Node.js</span>
+            <span>•</span>
+            <span>HTTP + File System + Path</span>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
