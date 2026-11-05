@@ -1,0 +1,23 @@
+# Tested on Python 3.11. Install with:  pip install -r requirements.txt
+streamlit==1.67.0
+streamlit-webrtc>=0.63,<1
+
+# Computer vision and deep learning
+torch>=2.5
+torchvision>=0.20
+ultralytics>=8.3
+opencv-python>=4.9
+pillow>=10.0
+numpy>=1.26
+
+# OCR (also needs the Tesseract program: brew install tesseract)
+pytesseract>=0.3.10
+
+# Fuzzy logic and data
+scikit-fuzzy>=0.5.0
+scikit-learn>=1.4
+pandas>=2.1
+matplotlib>=3.8
+
+# Testing
+pytest>=8.0

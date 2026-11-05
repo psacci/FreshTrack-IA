@@ -1,0 +1,169 @@
+{
+  "history": [
+    {
+      "phase": "warm-up",
+      "epoch": 1,
+      "train_loss": 0.7292059712883786,
+      "train_acc": 0.764799154334038,
+      "val_loss": 0.69789174120702,
+      "val_acc": 0.898256735340729,
+      "val_macro_f1": 0.7763376230830804
+    },
+    {
+      "phase": "warm-up",
+      "epoch": 2,
+      "train_loss": 0.6394407432880764,
+      "train_acc": 0.8278276955602537,
+      "val_loss": 0.6753140426097695,
+      "val_acc": 0.9239302694136292,
+      "val_macro_f1": 0.8082552663360092
+    },
+    {
+      "phase": "warm-up",
+      "epoch": 3,
+      "train_loss": 0.6171648037358016,
+      "train_acc": 0.8431553911205074,
+      "val_loss": 0.6731662640291991,
+      "val_acc": 0.9255150554675119,
+      "val_macro_f1": 0.8173156282220244
+    },
+    {
+      "phase": "fine-tune",
+      "epoch": 1,
+      "train_loss": 0.6139072248471967,
+      "train_acc": 0.8599365750528541,
+      "val_loss": 0.5976462986692196,
+      "val_acc": 0.967987321711569,
+      "val_macro_f1": 0.9029472165503059
+    },
+    {
+      "phase": "fine-tune",
+      "epoch": 2,
+      "train_loss": 0.5070769185117637,
+      "train_acc": 0.9215776955602537,
+      "val_loss": 0.5743739846202348,
+      "val_acc": 0.9702060221870048,
+      "val_macro_f1": 0.9247911267122672
+    },
+    {
+      "phase": "fine-tune",
+      "epoch": 3,
+      "train_loss": 0.47172368108344126,
+      "train_acc": 0.9437764270613108,
+      "val_loss": 0.544239575190325,
+      "val_acc": 0.9800316957210776,
+      "val_macro_f1": 0.9293948763084029
+    },
+    {
+      "phase": "fine-tune",
+      "epoch": 4,
+      "train_loss": 0.45589493476563225,
+      "train_acc": 0.9527616279069767,
+      "val_loss": 0.5479940715096832,
+      "val_acc": 0.9844690966719493,
+      "val_macro_f1": 0.9423813456333899
+    },
+    {
+      "phase": "fine-tune",
+      "epoch": 5,
+      "train_loss": 0.4331174297829259,
+      "train_acc": 0.9656448202959831,
+      "val_loss": 0.5310743991622079,
+      "val_acc": 0.9835182250396196,
+      "val_macro_f1": 0.9471081314638865
+    },
+    {
+      "phase": "fine-tune",
+      "epoch": 6,
+      "train_loss": 0.4234750734575203,
+      "train_acc": 0.970137420718816,
+      "val_loss": 0.5286156364269378,
+      "val_acc": 0.9857369255150554,
+      "val_macro_f1": 0.9495725084877747
+    },
+    {
+      "phase": "fine-tune",
+      "epoch": 7,
+      "train_loss": 0.41398269826463613,
+      "train_acc": 0.9740354122621564,
+      "val_loss": 0.5294189207055111,
+      "val_acc": 0.9844690966719493,
+      "val_macro_f1": 0.9451091975655133
+    },
+    {
+      "phase": "fine-tune",
+      "epoch": 8,
+      "train_loss": 0.40126706392014,
+      "train_acc": 0.9803779069767442,
+      "val_loss": 0.5132363333566065,
+      "val_acc": 0.989540412044374,
+      "val_macro_f1": 0.9606202333204609
+    },
+    {
+      "phase": "fine-tune",
+      "epoch": 9,
+      "train_loss": 0.397964124290182,
+      "train_acc": 0.9820956659619451,
+      "val_loss": 0.5157130070089727,
+      "val_acc": 0.9917591125198099,
+      "val_macro_f1": 0.9708386774472468
+    },
+    {
+      "phase": "fine-tune",
+      "epoch": 10,
+      "train_loss": 0.39074471435385577,
+      "train_acc": 0.9857293868921776,
+      "val_loss": 0.5207447881271646,
+      "val_acc": 0.9822503961965134,
+      "val_macro_f1": 0.9602632556739623
+    },
+    {
+      "phase": "fine-tune",
+      "epoch": 11,
+      "train_loss": 0.38820039510852944,
+      "train_acc": 0.9863239957716702,
+      "val_loss": 0.5126345536032494,
+      "val_acc": 0.9920760697305864,
+      "val_macro_f1": 0.9705779511743939
+    },
+    {
+      "phase": "fine-tune",
+      "epoch": 12,
+      "train_loss": 0.3854217040362368,
+      "train_acc": 0.9874471458773785,
+      "val_loss": 0.5096756803536,
+      "val_acc": 0.9908082408874802,
+      "val_macro_f1": 0.9698877293325753
+    }
+  ],
+  "best_val_macro_f1": 0.9708386774472468,
+  "best_epoch": 12,
+  "device": "mps",
+  "seconds": 1644,
+  "classes": [
+    "aging",
+    "fresh",
+    "spoiled"
+  ],
+  "train_counts": [
+    7537,
+    6679,
+    920
+  ],
+  "args": {
+    "data": "dataset/freshness_stale_expanded",
+    "out": "models/freshness_classification/mobilenetv2_fresh_stale.pt",
+    "warmup_epochs": "3",
+    "epochs": "12",
+    "batch": "32",
+    "lr_head": "0.001",
+    "lr": "0.0001",
+    "patience": "4",
+    "image_size": "224",
+    "workers": "2",
+    "seed": "42",
+    "limit_per_class": "0",
+    "no_pretrained": "False",
+    "init_from": "None"
+  }
+}

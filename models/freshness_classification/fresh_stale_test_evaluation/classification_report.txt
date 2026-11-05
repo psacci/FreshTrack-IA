@@ -1,0 +1,9 @@
+              precision    recall  f1-score   support
+
+       aging      0.982     0.985     0.983      1633
+       fresh      0.997     0.989     0.993      1416
+     spoiled      0.908     0.927     0.917       245
+
+    accuracy                          0.983      3294
+   macro avg      0.962     0.967     0.965      3294
+weighted avg      0.983     0.983     0.983      3294

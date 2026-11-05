@@ -1,0 +1,71 @@
+{
+  "created": "2026-11-07T05:52:50",
+  "device": "cpu",
+  "checkpoint": "mobilenetv2_freshness.pt",
+  "trained_epoch": 1,
+  "pretrained_backbone": true,
+  "note": "Baseline trained in a 1-CPU sandbox at 128 px: 3 head-only epochs, then 2 short fine-tuning passes (one on a subset). Retrain at 224 px on your own machine for the final run.",
+  "test": {
+    "n": 1246,
+    "accuracy": 0.9686998394863563,
+    "macro_precision": 0.97462672566407,
+    "macro_recall": 0.9663721748349153,
+    "macro_f1": 0.9701224272081492,
+    "per_class": {
+      "aging": {
+        "precision": 0.9523809523809523,
+        "recall": 0.9931506849315068,
+        "f1": 0.972338642078793,
+        "support": 584
+      },
+      "fresh": {
+        "precision": 0.9797979797979798,
+        "recall": 0.9304556354916067,
+        "f1": 0.9544895448954489,
+        "support": 417
+      },
+      "spoiled": {
+        "precision": 0.991701244813278,
+        "recall": 0.9755102040816327,
+        "f1": 0.9835390946502057,
+        "support": 245
+      }
+    },
+    "confusion_matrix": [
+      [
+        580,
+        4,
+        0
+      ],
+      [
+        27,
+        388,
+        2
+      ],
+      [
+        2,
+        4,
+        239
+      ]
+    ],
+    "classes": [
+      "aging",
+      "fresh",
+      "spoiled"
+    ],
+    "per_fruit_accuracy": {
+      "apple": {
+        "n": 318,
+        "accuracy": 0.9622641509433962
+      },
+      "banana": {
+        "n": 604,
+        "accuracy": 0.9602649006622517
+      },
+      "orange": {
+        "n": 324,
+        "accuracy": 0.9907407407407407
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+data/*.db
+data/raw/
+dataset/detection/vegqual/
+runs/
+.DS_Store
+
+# Large, re-downloadable files
+models/food_detection/yolov8n.pt
+models/food_detection/freshtrack_lvis.pt
+models/freshness_classification/fresh44/
+weights/clip/ViT-B-32.pt
+dataset/freshness/train/
+dataset/freshness/val/
+dataset/freshness/test/
+dataset/freshness/_staging/
+dataset/freshness_expanded/
+dataset/freshness_stale_expanded/
+dataset/freshness_all/
+dataset/own_photos/

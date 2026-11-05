@@ -1,0 +1,83 @@
+{
+  "created": "2026-11-08T01:44:30",
+  "device": "mps",
+  "checkpoint": "mobilenetv2_fresh_stale.pt",
+  "trained_epoch": 12,
+  "pretrained_backbone": true,
+  "note": "",
+  "test": {
+    "n": 3294,
+    "accuracy": 0.982695810564663,
+    "macro_precision": 0.9622830603679442,
+    "macro_recall": 0.9670801716640863,
+    "macro_f1": 0.9646442831354891,
+    "per_class": {
+      "aging": {
+        "precision": 0.9816961561928005,
+        "recall": 0.9853031230863442,
+        "f1": 0.9834963325183375,
+        "support": 1633
+      },
+      "fresh": {
+        "precision": 0.9971530249110321,
+        "recall": 0.989406779661017,
+        "f1": 0.9932647997164126,
+        "support": 1416
+      },
+      "spoiled": {
+        "precision": 0.908,
+        "recall": 0.926530612244898,
+        "f1": 0.9171717171717172,
+        "support": 245
+      }
+    },
+    "confusion_matrix": [
+      [
+        1609,
+        3,
+        21
+      ],
+      [
+        13,
+        1401,
+        2
+      ],
+      [
+        17,
+        1,
+        227
+      ]
+    ],
+    "classes": [
+      "aging",
+      "fresh",
+      "spoiled"
+    ],
+    "per_fruit_accuracy": {
+      "apple": {
+        "n": 847,
+        "accuracy": 0.9811097992916175
+      },
+      "banana": {
+        "n": 1004,
+        "accuracy": 0.9681274900398407
+      },
+      "bitter gourd": {
+        "n": 104,
+        "accuracy": 1.0
+      },
+      "capsicum": {
+        "n": 292,
+        "accuracy": 1.0
+      },
+      "orange": {
+        "n": 757,
+        "accuracy": 0.9894319682959049
+      },
+      "tomato": {
+        "n": 290,
+        "accuracy": 0.996551724137931
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+# Copy to data.yaml and edit. Paths are relative to this file.
+path: .
+train: images/train
+val: images/val
+names:
+  0: apple
+  1: banana
+  2: orange
+  3: tomato
