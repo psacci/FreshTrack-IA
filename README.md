@@ -1,5 +1,7 @@
 # FreshTrack AI
 
+**GitHub repository:** [psacci/FreshTrack-IA](https://github.com/psacci/FreshTrack-IA)
+
 An intelligent agent that watches your fridge and pantry. It identifies food from photos, judges how fresh fruit looks, reads dates off packaging, remembers what you own, and tells you **what to eat first**.
 
 Built for the Intelligent Agents final project. Utility-based agent with learning components.
